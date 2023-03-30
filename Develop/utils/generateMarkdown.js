@@ -69,11 +69,17 @@ function renderTableOfContents(data) {
 }
 
 
-// TODO: Create a function to generate markdown for README
+// function to generate markdown for README
 function generateMarkdown(data) {
-  return `# ${data.title}
-
-`;
+  return `${renderLicenseBadge(data)}# ${data.title}
+${renderSection("Description", data.description)}
+${renderTableOfContents(data)}
+${renderSection("Installation", data.installation)}
+${renderSection("Usage", data.usage)}
+${renderLicenseSection(data)}
+${renderSection("Contribution", data.contribution)}
+${renderSection("Tests", data.test)}
+${renderQuestionSection(data)}`;
 }
 
 module.exports = generateMarkdown;
