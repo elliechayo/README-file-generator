@@ -68,11 +68,21 @@ const questions = [
         },
 ];
 
-// TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
+// function to write README file
+function writeToFile(fileName, data) {
+     try {
+       fs.writeFileSync(path.join(__dirname, fileName), data);
+       console.log("File created");
+     } catch (error) {
+       console.log("Error while writing file");
+       console.error(error);
+  }   
+}
 
-// TODO: Create a function to initialize app
-function init() {}
+// a function to initialize app
+function init() {
+     
+}
 
 // Function call to initialize app
 init();
