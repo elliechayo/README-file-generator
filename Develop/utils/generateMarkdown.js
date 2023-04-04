@@ -1,54 +1,49 @@
-// function that returns a license badge based on which license is passed in
-// If there is no license, return an empty string
-// function renderLicenseBadge(data) {
-//   if (data.license) {
-//     const badgeURL = `https://img.shields.io/github/license/${data.username}/${data.reponame}`;
-//     return `[![Github license](${badgeURL})](${renderLicenseLink(data)})]\n`;
-//   }
-//   return "";
-// }
-function renderLicenseBadge(license) {
-  if (license !== 'no license'){
-    return `![badge](https://img.shields.io/badge/license-${license}-green>)`;
-  } else {
-    return ' ';
-  }
+const licenseBadgeMap = {
+  "Academic Free License v3.0":
+    "https://img.shields.io/badge/License-AFL--3.0-green.svg",
+  "Apache license 2.0":
+    "https://img.shields.io/badge/License-Apache_2.0-blue.svg",
+  "BSD 3-clause Clear license":
+    "https://img.shields.io/badge/License-BSD_3--Clause-blue.svg",
+  "Creative Commons license family":
+    "https://img.shields.io/badge/License-CC0_1.0-lightgrey.svg",
+  "GN General Public License v3.0":
+    "https://img.shields.io/badge/License-LGPL_v3-blue.svg",
+  ISC: "https://img.shields.io/badge/License-ISC-blue.svg",
+  MIT: "https://img.shields.io/badge/License-MIT-yellow.svg",
+  "Open Software License 3.0":
+    "https://img.shields.io/badge/License-OSL--3.0-yellow.svg",
 };
 
-// function getLicenseIcon(license) {
-//   switch (license) {
-//     case 'MIT':
-//       return '![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)';
-//     case 'Apache':
-//       return '![License: Apache 2.0](https://img.shields.io/badge/License-Apache%202.0-blue.svg)';
-//     case 'GPLv3':
-//       return '![License: GPL 3.0](https://img.shields.io/badge/License-GPLv3-blue.svg)';
-//     case 'BSD 3-Clause':
-//       return '![License: BSD 3-Clause](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)';
-//     default:
-//       return '';
-//   }
-// }
-
+// function that returns a license badge based on which license is passed in
+// If there is no license, return an empty string
+function renderLicenseBadge(data) {
+  if (data.license) {
+    const badgeURL = licenseBadgeMap[data.license];
+    return `[![Github license](${badgeURL})](${renderLicenseLink(data)})\n`;
+  }
+  return "";
+}
 
 // function that returns the license link
 // If there is no license, return an empty string
-// function renderLicenseLink(data) {
-//   if (data.license) {
-//     return `https://github.com/${data.username}/${data.reponame}/blob/main/LICENSE`;
-//   }
-//   return "";
-// }
-function renderLicenseLink(license) {
-  if (license !== 'no license') {
-  return `
-  [${license}](https://choosealicense.com/licenses/${license})
-    `;
-  } else {
-    return ' ';
-  }
-}
+const licenseMap = {
+  "Academic Free License v3.0": "afl-3.0",
+  "Apache license 2.0": "apache-2.0",
+  "BSD 3-clause Clear license": "bsd-3-clause-clear",
+  "Creative Commons license family": "cc0-1.0",
+  "GN General Public License v3.0": "lgpl-3.0",
+  ISC: "isc",
+  MIT: "mit",
+  "Open Software License 3.0": "osl-3.0",
+};
 
+function renderLicenseLink(data) {
+  if (data.license) {
+    return `https://choosealicense.com/licenses/${licenseMap[data.license]}`;
+  }
+  return "";
+}
 
 // function that returns the license section of README
 // If there is no license, return an empty string
@@ -88,8 +83,7 @@ function renderTableOfContents(data) {
     !data.usage &&
     !data.license &&
     !data.contribution &&
-    !data.test &&
-    !data.questions
+    !data.test 
   ) {
     return "";
   }
@@ -102,7 +96,6 @@ function renderTableOfContents(data) {
   if (data.questions) mdData += "/n- [Questions](#questions)";
   return mdData;
 }
-
 
 // function to generate markdown for README
 function generateMarkdown(data) {

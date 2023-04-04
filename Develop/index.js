@@ -50,7 +50,6 @@ const questions = [
           name: "email",
           message: "Enter your email address: ",
         },
-      
         {
           type: "list",
           name: "license",
@@ -68,11 +67,10 @@ const questions = [
           ],
         },
 ];
-
 // function to write README file
 function writeToFile(fileName, data) {
      try {
-       fs.writeFileSync(path.join(__dirname, fileName), data);
+       fs.writeFileSync(path.join(__dirname, "/generated/", fileName), data);
        console.log("Readme file has been generated");
      } catch (error) {
        console.log("Error while writing file");
@@ -80,7 +78,6 @@ function writeToFile(fileName, data) {
   }   
 }
 
-// a function to initialize app
 function init() {
   inquirer
   .prompt(questions)
@@ -91,5 +88,5 @@ function init() {
   .catch((err) => console.error(err));  
 }
 
-// Function call to initialize app
+// function call to initialize app
 init();
