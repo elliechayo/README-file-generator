@@ -29,7 +29,7 @@ When user runs the application in their terminal the application presents the us
 
 ## Installation 
 <hr>
-application requires:
+
 - Node 
 - Inquirer package 8.2.4
 - npm init

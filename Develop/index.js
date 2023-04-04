@@ -13,7 +13,7 @@ const questions = [
         {
           type: "input",
           name: "description",
-          message: "Enter descrition: ",
+          message: "Enter description: ",
         },
         {
           type: "input",
@@ -73,7 +73,7 @@ const questions = [
 function writeToFile(fileName, data) {
      try {
        fs.writeFileSync(path.join(__dirname, fileName), data);
-       console.log("File created");
+       console.log("Readme file has been generated");
      } catch (error) {
        console.log("Error while writing file");
        console.error(error);
