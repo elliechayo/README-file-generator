@@ -13,7 +13,7 @@ Table Of Contents
 - [Questions](#questions)
 
 ## Installation
-node
+ Node installation, Inquirer package 8.2.4, npm init
 
 ## Usage
 Once the installation is completed, run node index.js in the commend line and user will be prompted to answer a series of questions. When the user complete answering all of the questions, a README file is generated as a separate file.

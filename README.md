@@ -46,7 +46,7 @@ WHEN the user selects a license from a list of options, a badge for that license
 
 WHEN the user enters their GitHub username, GitHub profile and email address, the information is added to the Question section with a link to my GitHub profile and instructions on how to reach me with additional questions.
 
-WHEN the user complete answering all of the questions, a README file is generated as a separate file.
+WHEN the user complete answering all of the questions, a README file is generated as a separate file under the generated folder.
 
 WHEN the user clicks on the links in the Table of Contents, their taken to the corresponding section of the README.
 
