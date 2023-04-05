@@ -53,9 +53,11 @@ WHEN the user clicks on the links in the Table of Contents, their taken to the c
 ## Preview
 <hr>
 
-The following video walkthrough shows the application appearance and functionality:
+The following a walkthrough video shows the application appearance and functionality:
 
-![initial display](/Assets/day_scheduler_app.gif)
+
+[![image](/assests/walkthough%20video%20image.png)](https://drive.google.com/file/d/1U0K1Yq_eWBYoSecTN0gUXgjJnAtiETXU/view)
+
 
 
 
@@ -86,4 +88,6 @@ Permission is hereby granted, free of charge, to any person obtaining a copy of 
 The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+
 

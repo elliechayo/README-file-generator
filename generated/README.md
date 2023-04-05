@@ -1,8 +1,8 @@
-[![Github license](https://img.shields.io/badge/License-AFL--3.0-green.svg)](https://choosealicense.com/licenses/afl-3.0)
-# project title
+[![Github license](https://img.shields.io/badge/License-MIT-yellow.svg)](https://choosealicense.com/licenses/mit)
+# Professional README Generator Sample
 
 ## Description
-description
+The objective of the project was to create a command-line application that dynamically generates a professional README.md from a user's input.
 
 Table Of Contents
 - [Installation](#installation)
@@ -13,20 +13,20 @@ Table Of Contents
 - [Questions](#questions)
 
 ## Installation
-technology
+node
 
 ## Usage
-usage info
+Once the installation is completed, run node index.js in the commend line and user will be prompted to answer a series of questions. When the user complete answering all of the questions, a README file is generated as a separate file.
 
 ## License
-project title is licensed under the Academic Free License v3.0.
+Professional README Generator Sample is licensed under the MIT.
 
 ## Contribution
-none
+No contributors at this time
 
 ## Tests
-testing
+Clone the repository code and run the application in your terminal by running code 'node index.js'. Answer all the prompt questions. When completed, confirm the information entered was populated into the new REDAME file created. 
 
 ## Questions
-- Here's my [Github Profile](https://github.com/name)
-- Reach me via Email - email
+- Here's my [Github Profile](https://github.com/elliechayo)
+- Reach me via Email - elliechayo@gmail.com
